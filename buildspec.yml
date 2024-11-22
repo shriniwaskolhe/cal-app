@@ -29,7 +29,7 @@ phases:
   post_build:
     commands:
       - echo Deploying to S3...
-      - aws s3 sync . s3://cal-app-bucket/specific-folder/ --delete
+      - aws s3 sync . s3://cal-app-bucket/cal-app-folder/ --delete
 artifacts:
   files:
     - '**/*'
